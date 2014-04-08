@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <head>
 </head>
@@ -5,3 +6,118 @@
 <h1>HELLO BITCH!</h1>
 </body>
 </html>
+=======
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Mi primera página</title> 
+	<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="assets/css/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="assets/css/jquery.mobile.theme-1.4.2.min.css" />
+	<link rel="stylesheet" href="assets/css/gapnote.css" />
+	
+	<script src="assets/js/cordova-1.6.1.js"></script>
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="assets/js/gapnote.js"></script>
+
+</head> 
+
+<body> 
+<div id="intro" data-role="page">
+	<div data-role="content" class="splash"></div>
+</div>
+
+<div id="nueva" data-role="page">
+
+	<header data-role="header" data-position="fixed">
+		<h1>Nueva Nota</h1>
+	</header>
+
+	<div data-role="content">
+	
+	<form id="nota" name="nota">	
+    	<div class="field"><input type="text" name="titulo" id="titulo" placeholder="Titulo de la nota"  data-theme="a" /></div>
+    	<div class="field"><textarea name="descripcion" id="descripcion" placeholder="Descripción de la nota" data-theme="a"></textarea></div>
+    	<div class="field"><input name="fecha" id="fecha" type="date" placeholder="Fecha" value="" readonly="readonly" data-theme="a" /></div>
+		<div class="field"><a href="javascript:void(0)" id="camara" data-role="button" data-icon="gear" data-theme="a">Sacar Foto</a></div>
+		<div id="foto"></div>	
+		
+		<div class="field">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><a href="javascript:void(0)" id="crear" data-role="button" onclick="$.mobile.GapNote.nuevaNota()" data-icon="check" data-theme="e">Añadir</a></div>
+				<div class="ui-block-b"><a href="javascript:void(0)" id="reset" data-role="button" onclick="$.mobile.GapNote.resetNota()" data-icon="refresh" data-theme="d">Reset</a></div>	   
+			</fieldset>
+		</div>			
+			     	
+		
+	</form>
+    </div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="#listado" data-icon="grid" data-transition="slide">Listado</a></li>
+			<li><a href="#nueva" data-icon="plus"  data-transition="slide" class="ui-btn-active">Añadir</a></li>
+			<li><a href="#ver" data-icon="search" data-transition="slide">Ver</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</footer><!-- /footer -->
+	
+</div>
+
+<div id="listado" data-role="page">
+
+	<header data-role="header" data-position="fixed">
+		<h1>Listado de  Notas</h1>
+	</header>
+
+	<div data-role="content">
+		<ul id="items" data-role="listview" data-split-icon="delete" data-theme="e" data-split-theme="e">
+
+			</ul>
+    </div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="#listado" data-icon="grid" data-transition="slide" class="ui-btn-active">Listado</a></li>
+			<li><a href="#nueva" data-icon="plus"  data-transition="slide">Añadir</a></li>
+			<li><a href="#ver" data-icon="search" data-transition="slide">Ver</a></li>
+		</ul>
+
+	</div><!-- /navbar -->
+	</footer><!-- /footer -->
+	
+</div>
+
+<div id="ver" data-role="page">
+
+	<header data-role="header" data-position="fixed">
+		<h1>Ver Nota</h1>
+	</header>
+
+	<div data-role="content">	
+    	<div class="text titulo"></div>
+    	<div class="text fecha"></div>
+    	<div class="text descripcion"></div>
+    	<div class="foto"></div>
+    </div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar" data-iconpos="top">
+		<ul>
+			<li><a href="#listado" data-icon="grid" data-transition="slide">Listado</a></li>
+			<li><a href="#nueva" data-icon="plus"  data-transition="slide">Añadir</a></li>
+			<li><a href="#ver" data-icon="search" data-transition="slide" class="ui-btn-active">Leer</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</footer><!-- /footer -->
+	
+</div>
+</body>
+</html>
+>>>>>>> 4a1182edee2e0896fc168f5dac383fc39ad60db8
